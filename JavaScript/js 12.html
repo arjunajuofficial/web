@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		document.write('<h1>'+'Global'+'</h1>');
+		var outside='apple';
+		function display() {
+		let inside='Apple';		
+		document.write(inside+' inside function'+'<br/>');
+		}
+		display();
+		document.write(outside+' outside function'+'<br/>');
+		document.write('<h1>'+'Local'+'</h1>');
+		display();
+	</script>
+</head>
+<body>
+</body>
+</html>
