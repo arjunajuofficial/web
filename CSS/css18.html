@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+  
+  .float_center {
+  float: right;
+
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+}
+.float_center > .child {
+  position: relative;
+  left: 50%;
+}
+
+.logo1{
+    background-color: red;
+    box-shadow: 
+        55px 0 0 0 blue, 
+        0 55px 0 0 green, 
+        55px 55px 0 0 yellow;
+    height: 50px;
+    width: 50px;
+    float: left;
+}
+
+.logo2{
+    background-color: darkviolet;
+    box-shadow: 
+        55px 0 0 0 #E8B109, 
+        0 55px 0 0 black, 
+        55px 55px 0 0 white;
+    height: 50px;
+    width: 50px;
+    float: right;
+}
+
+</style>
+</head>
+<body bgcolor="lightgrey">
+
+  <div class="logo1"></div>
+  <div class="float_center">
+  <div class="logo2"></div>
+  </div>
+  
+
+</body>
+</html>
