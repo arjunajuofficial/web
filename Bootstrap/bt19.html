@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ASGMT 19 | Bootstrap-split button dropdown</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <br><br><br><br><br>
+
+<div class="container">
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary btn-lg">SQL Server</button>
+          <button type="button" class="btn btn-primary dropdown-toggle btn-lg" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">C#</a></li>
+            <li><a href="#">ASP.NET</a></li>
+            <li><a href="#">ADD.NET</a></li>
+          </ul>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary btn-sm">SQL Server</button>
+          <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary btn-xs">SQL Server</button>
+          <button type="button" class="btn btn-primary dropdown-toggle btn-xs" data-toggle="dropdown">
+            <span class="caret"></span>
+          </button>
+        </div>
+</div>
+
+</body>
+</html>
