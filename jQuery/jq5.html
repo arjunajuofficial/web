@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>ASGMNT5 |JQUERY-CHAINING</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(()=>{
+$('#btn').click(()=>{
+$('#para').slideUp("slow").slideDown("slow");
+});
+});
+</script>
+<style>
+#btn,#para{
+	 padding: 5px;
+  text-align: center;
+  background-color: skyblue;
+  border: solid 1px #c3c3c3;
+  border-radius: 10px;
+}
+</style>
+</head>
+<body>
+	<div id="btn"><input type="button" value="Click here to slide down"></div>
+	<br>
+<div id="para">
+<p align="justify">&nbsp;&nbsp;jQuery is a JavaScript Library.jQuery greatly simplifies JavaScript programming.jQuery is easy to learn.The purpose of jQuery is to make it much easier to use JavaScript on your website.jQuery is a lightweight,"write less, do more", JavaScript library.The purpose of jQuery is to make it much easier to use JavaScript on your website.jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.There are lots of other JavaScript frameworks out there, but jQuery seems to be the most popular, and also the most extendable.</p>
+</div>
+</body>
+</html>
