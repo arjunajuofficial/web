@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>ASGMT 33 | JS - Check box validation</title>
+	<script type="text/javascript">
+	function validate(){
+		flag=0;
+		//qual=document.frm_register.qulfcn.value;
+		var graduate=document.getElementById('qual1').checked;
+		var postgraduate=document.getElementById('qual2').checked;
+
+		if(graduate==false && postgraduate==false){
+			document.getElementById('msg_qual').innerHTML="* Please choose your Qualification";
+			flag++;
+		}
+		else
+		{
+			document.getElementById('msg_qual').innerHTML="";
+		}
+		if(flag>0){
+			return false;
+		}
+	}
+	</script>
+</head>
+<body>
+	<center>
+	<form name="frm_register" onclick="return validate()">
+	<table>
+		<br>
+		<h2 align="center">Check Box Validation</h2>
+		<br>
+		<br>
+		<br>
+		<label><font size="5">Qualification:</font></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="checkbox" name="qulfcn" value="graduate" id="qual1"><font size="4">Graduate</font>&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="checkbox" name="qulfcn" value="pgraduate" id="qual2"><font size="4">Post Graduate</font>
+		<br>
+		<br>
+		<span id="msg_qual" style="color:red"></span>
+		<br>
+		<br>
+		<input type="submit" value="submit">
+	</table>
+</form>
+</center>
+</body>
+</html>

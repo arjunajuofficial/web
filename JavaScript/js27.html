@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>ASGMT 27 | JS - Forms</title>
+	<script type="text/javascript">
+	function getData()
+	{
+		var data=document.getElementById('para');
+		var fname=document.getElementById('txt_name');
+		var lname=document.getElementById('txt_lname');
+	    var emailid=document.getElementById('txt_id');
+	    data.innerHTML="Welcome"+ " " +fname.value+ " "+lname.value+ " "+"My Email Id is:"+ " "+emailid.value;
+	    
+	}
+
+	</script>
+</head>
+<body>
+<form>
+	<label>First Name:</label>
+	<input type="text" id="txt_name">
+	<br>
+	<br>
+	<label>Last Name:</label>
+	<input type="text" id="txt_lname">
+	<br>
+	<br>
+	<label>Email Id:&nbsp;&nbsp;&nbsp;</label>
+	<input type="text" id="txt_id">
+	<br>
+	<br>
+	<label>Password:&nbsp;</label>
+	<input type="password" id="txt_pwrd">
+	<br>
+	<br>
+	<input type="button" value="SignUp" onclick="getData()">
+	<p id="para"></p>
+	
+</form>
+</body>
+</html>

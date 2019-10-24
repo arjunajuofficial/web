@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>ASGMT 32 | JS - Radio Button Validation</title>
+	<script type="text/javascript">
+	function validate(){
+		flag=0;
+		gender=document.frm_register.gender.value;
+
+		if(gender==""){
+			document.getElementById('msg_gender').innerHTML="* Please choose your gender";
+			flag++;
+
+		}
+		else
+		{
+			document.getElementById('msg_gender').innerHTML="";
+		}
+		if(flag>0){
+			return false;
+		}
+	}
+	</script>
+</head>
+<body>
+	<center>
+	<form name="frm_register" onclick="return validate()">
+	<table>
+		<br>
+		<h2 align="center">Radio Button Validation</h2>
+		<br>
+		<br>
+		<br>
+		<label><font size="5">Gender:</font></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="radio" name="gender" value="male"><font size="4">Male</font>
+		<input type="radio" name="gender" value="female"><font size="4">FeMale</font>
+		<br>
+		<br>
+		<span id="msg_gender" style="color:red"></span>
+		<br>
+		<br>
+		<input type="submit" value="submit">
+	</table>
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>ASGMT 26 | JS - Using Timers</title>
+	<script type="text/javascript">
+	/*function getData()
+	{
+	var i=document.getElementById('social');
+	i.src = "images/insta.jpg";*/
+	var image_tracker= 'f';
+	function getData()
+	{
+		var image=document.getElementById('social');
+		if(image_tracker=='f')
+		{
+			image.src="images/insta.jpg";
+			image_tracker= 'i';
+		}
+		else{
+			image.src="images/facebook.png";
+			image_tracker= 'f';
+		}
+	}
+	setTimeout('getData()',2000);
+	setInterval('getData()',5000);
+	</script>
+</head>
+<body>
+<img src="images/facebook.png" alt="Facebook logo" id="social" onclick="getData()">
+</body>
+</html>
